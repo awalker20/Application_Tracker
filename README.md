@@ -1,4 +1,4 @@
-# Application_Tracker
+# Application Tracker
 This project is a job application tracker. It lets users keep track of jobs applied to in the past along with other features such as:
 
 - Sort applications by company, position, date, etc...
