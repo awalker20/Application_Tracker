@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btnApp" mnemonicParsing="false" onAction="#addApplication" text="Add Job Application" />
+            <Button fx:id="btnExp" mnemonicParsing="false" onAction="#showExperience" text="Show Work Experience" />
+            <Button fx:id="btnReminder" mnemonicParsing="false" onAction="#addReminder" text="Add Reminder" />
+            <Button mnemonicParsing="false" text="Exit" />
+        </items>
+      </ToolBar>
+      <AnchorPane prefHeight="498.0" prefWidth="619.0">
+         <children>
+            <TableView fx:id="appTable" layoutX="19.0" layoutY="477.0" prefHeight="327.0" prefWidth="1023.0">
+               <columns>
+                  <TableColumn fx:id="companyColumn" minWidth="-1.0" prefWidth="157.0" text="Company Name" />
+                  <TableColumn fx:id="positionColumn" prefWidth="167.0" text="Position" />
+                  <TableColumn fx:id="dateColumn" prefWidth="165.0" text="Date Applied" />
+                  <TableColumn fx:id="contactName" prefWidth="165.0" text="Contact Name" />
+                  <TableColumn fx:id="contactPhoneNum" prefWidth="165.0" text="Contact Phone Number" />
+                  <TableColumn fx:id="contactEmail" prefWidth="165.0" text="Contact Email" />
+               </columns>
+            </TableView>
+            <Label layoutX="426.0" layoutY="426.0" prefHeight="38.0" prefWidth="175.0" text="Job Applications" textFill="#e49605">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="172.0" text="Reminders" textFill="#eea209">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <TableView fx:id="reminderTable" layoutX="119.0" layoutY="213.0" prefHeight="197.0" prefWidth="755.0">
+              <columns>
+                  <TableColumn fx:id="reminderCompanyColumn" prefWidth="140.0" text="Company Name" />
+                <TableColumn fx:id="reminderPositionColumn" prefWidth="151.0" text="Position" />
+                <TableColumn fx:id="reminderDateColumn" prefWidth="85.0" text="Date" />
+                  <TableColumn fx:id="reminderTimeColumn" prefWidth="87.0" text="Time" />
+                  <TableColumn fx:id="reminderNotesColumn" maxWidth="6000.0" prefWidth="291.0" text="Notes" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="150.0" fitWidth="822.0" layoutX="207.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/Logo1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblContact" layoutX="871.0" layoutY="436.0" onMouseClicked="#editContactInfo" text="Edit Contact Information" textFill="#2442eb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label fx:id="lblDelete" layoutX="691.0" layoutY="179.0" onMouseClicked="#deleteReminder" text="Delete" textFill="#2442eb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

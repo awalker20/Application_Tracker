@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ApplicationFormController">
+   <children>
+      <TextField fx:id="txtCompany" layoutX="38.0" layoutY="87.0" opacity="0.54" text="Company Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPosition" layoutX="38.0" layoutY="136.0" opacity="0.54" text="Position">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDate" layoutX="38.0" layoutY="185.0" opacity="0.54" text="Date Applied">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" cancelButton="true" layoutX="111.0" layoutY="241.0" mnemonicParsing="false" onAction="#addJob" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblJobApplication" alignment="CENTER" layoutX="24.0" layoutY="39.0" prefHeight="17.0" prefWidth="250.0" text="Add a Job Application" textFill="#d66400">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
