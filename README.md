@@ -6,6 +6,6 @@ This project is a job application tracker. It lets users keep track of jobs appl
 - Set reminders to remind yourself about an application submitted
 - Add your previous work experience
 
-Java and JavaFX were used to build this application
+Java and JavaFX were used to build this application.
 
 *Additional contributors:* Melody Gilani & Roneil Sembrano
